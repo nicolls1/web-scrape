@@ -1,0 +1,19 @@
+# docker-compose.yml
+# Add this top-level entry
+version: '3'
+services:
+  redis:
+    image: redis
+    expose:
+      - 6379
+
+  app:
+    image: scrape-api
+    container_name: app
+    links:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    ports:
+      - 8888:8888
