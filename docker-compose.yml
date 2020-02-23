@@ -1,5 +1,3 @@
-# docker-compose.yml
-# Add this top-level entry
 version: '3'
 services:
   redis:
