@@ -1,4 +1,4 @@
-lxml==4.5.0
+lxml==4.6.5
 redis==3.4.1
 requests==2.23.0
 tornado==6.0.3
